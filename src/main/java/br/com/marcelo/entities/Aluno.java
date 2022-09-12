@@ -10,7 +10,7 @@ public class Aluno extends Pessoa {
         this.RA = RA;
     }
 
-    public Aluno( String RA, String nome, String apelido, int idade, double altura, double notaFinal) {
+    public Aluno() {
         super(nome, apelido, idade, altura);
         this.RA = RA;
         this.notaFinal = notaFinal;

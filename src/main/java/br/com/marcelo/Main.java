@@ -1,6 +1,7 @@
 package br.com.marcelo;
 
 import br.com.marcelo.entities.Aluno;
+import br.com.marcelo.entities.Pessoa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +20,15 @@ public class Main {
         Integer x = 2; // Double, Character, Float, Boolean
 
         List<Integer> sequencia = new ArrayList<>();
-        List<Aluno> turma = new ArrayList<>();
+        List<Pessoa> turma = new ArrayList<>();
+
+        Pessoa beatriz = new Aluno("123-a", "Betriz Souza", 20, 1.65);
 
         turma.add(new Aluno("123A", "Pedro", 19, 1.85));
+
+        Aluno alunaBeatriz = (Aluno)beatriz;
+
+        System.out.println( alunaBeatriz );
 
         sequencia.add(2);
         sequencia.add(3);
